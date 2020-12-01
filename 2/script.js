@@ -35,6 +35,5 @@ const startGame = () => {
 }
 
 const randomNumber = randomizer(10);
-console.log(randomNumber);
 
 startGame ();
