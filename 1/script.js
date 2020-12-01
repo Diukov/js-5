@@ -1,7 +1,11 @@
-const powFunction = (a, b) => {
-  return Math.pow(a, b);
+const notAPowFunction = (a, b) => {
+  let result = 1;
+  for (let counter = 0; counter < b; counter++) {
+    result = result * a;
+  }
+  return result;
 }
 
-const result = powFunction(2, 5);
+const functionResult = notAPowFunction(2, 6);
 
-console.log(result);
+console.log(functionResult);
