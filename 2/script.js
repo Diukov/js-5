@@ -14,7 +14,7 @@ const guessOtherNumber = () => {
   let answer = askOtherNumber();
 
   while (answer !== null && answer !== randomNumber) {
-    answer = askOtherNumber()
+    answer = askOtherNumber();
   }
 
   return answer === randomNumber;
@@ -24,12 +24,12 @@ const startGame = () => {
   let result = guessFirstNumber();
 
   if (result) {
-    alert('Надо же, угадал с первого раза!')
+    alert('Надо же, угадал с первого раза! Твое число - ' + randomNumber);
   } else {
     result = guessOtherNumber();
 
     if (result) {
-      alert('Наконец ты выйграл!')
+      alert('Наконец ты выйграл! Загаданным числом было ' + randomNumber);
     }
   }
 }
